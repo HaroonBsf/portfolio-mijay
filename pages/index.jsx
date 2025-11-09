@@ -31,7 +31,7 @@ export default function Index() {
         );
 
         console.log(
-            "%cProcurando o código fonte? Aqui está ele: " + "%chttps://github.com/MUZAMMIL-JAVED\n\n" + "%cNão esqueça de deixar uma estrela! 🌟",
+            "%cLooking for the source code? Here it is: " + "%chttps://github.com/MUZAMMIL-JAVED\n\n" + "%cDon’t forget to leave a star! 🌟",
             "font-family: Inter, sans-serif; font-size: 1.2rem; font-weight: 500;",
             "font-family: Inter, sans-serif; font-size: 1.2rem; font-weight: 500; color: #FCD434;",
             "font-family: Inter, sans-serif; font-size: 1.2rem; font-weight: 500;"

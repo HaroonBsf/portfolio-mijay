@@ -269,9 +269,9 @@ export default function HomePage() {
                 <FloatNavigationBar />
                 <ProgressBar color={theme.colors.branding} height={5} />
                 <Head
-                    title="Portfólio de projetos de programação"
-                    metaDescription="Web portifólio de projetos de programação do Dev Muzammil Javed."
-                    keywords="Muzammil Javed, Muzammil, Javed, Programação, Portifólio, Dev, Programador, Developer, Desenvolvedor de software, analista de sistemas, programador fullstack, desenvolvedor frontend"
+                    title="Portfolio"
+                    metaDescription="Web portfolio of software projects by Muzammil Javed."
+                    keywords="Muzammil Javed, Portfolio, Software Developer, Fullstack, React, Next.js, Node.js, JavaScript"
                 />
                 <LandingPageContainer>
                     <TitleLandingContainer>

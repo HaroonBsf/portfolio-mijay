@@ -64,9 +64,9 @@ const LogoContainer = styled.div`
 `;
 
 const LogoText = styled.h3`
-	color: ${(props) => props.theme.colors.title};
-	font-weight: 700;
-	font-size: 30px;
+    color: ${(props) => props.theme.colors.title};
+    font-weight: 700;
+    font-size: 30px;
 
 	@media (max-width: 900px) {
 		font-size: ${(props) => props.theme.fontSizes.xl};
@@ -74,8 +74,13 @@ const LogoText = styled.h3`
 `;
 
 const CaracteresLogo = styled.span`
-	color: ${(props) => props.theme.colors.branding};
-	font-weight: 700;
+    color: ${(props) => props.theme.colors.branding};
+    font-weight: 700;
+`;
+
+const LogoBrand = styled.span`
+    color: ${(props) => props.theme.colors.branding};
+    font-weight: 700;
 `;
 
 const NavbarOptionContainer = styled.nav`
@@ -165,10 +170,10 @@ export default function LayoutTemplate({ children }) {
 					<Link href="#section-home" passHref>
 						<LogoContainer>
 							<LogoText>
-								<CaracteresLogo>&lt;</CaracteresLogo>MJ <CaracteresLogo>/&gt;</CaracteresLogo>
+								<CaracteresLogo>&lt;</CaracteresLogo><LogoBrand>MJ</LogoBrand> <CaracteresLogo>/&gt;</CaracteresLogo>
 							</LogoText>
 						</LogoContainer>
-					</Link>
+						</Link>
 				</Fade>
 
 				<NavbarOptionContainer>
