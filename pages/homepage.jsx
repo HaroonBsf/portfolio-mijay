@@ -4,7 +4,9 @@ import React, { useContext } from "react";
 //Third's librarys
 import styled from "styled-components";
 import { useTheme } from "styled-components";
-import ProgressBar from "react-progressbar-on-scroll";
+import dynamic from "next/dynamic";
+// Avoid SSR import-time window access from react-progressbar-on-scroll
+const ProgressBar = dynamic(() => import("react-progressbar-on-scroll"), { ssr: false });
 
 //Custom components
 import Head from "@/components/Head";

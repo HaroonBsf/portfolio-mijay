@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 import React, { useContext, useMemo } from "react";
 import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
+import { Fade } from "react-awesome-reveal";
 
 //Contexto
 import { SettingsContext } from "@/context/SettingsContext";
@@ -681,7 +681,7 @@ export default function Portifolio() {
 
             <ContainerGrid>
                 {array_projects?.map((project, index) => (
-                    <ScrollAnimation animateIn="fadeIn" animateOnce key={index} style={{ height: "100%" }}>
+                    <Fade triggerOnce key={index} style={{ height: "100%" }}>
                         <CardProject
                             title={project.title}
                             description={project.description}
@@ -690,7 +690,7 @@ export default function Portifolio() {
                             category={project.category}
                             linkUrl={project.linkUrl}
                         />
-                    </ScrollAnimation>
+                    </Fade>
                 ))}
             </ContainerGrid>
         </SectionPortifolio>

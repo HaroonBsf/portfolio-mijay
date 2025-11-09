@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext } from "react";
 import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
+import { Fade } from "react-awesome-reveal";
 import { useTheme } from "styled-components";
 
 //Context
@@ -83,13 +83,13 @@ export default function SatisfactionIndicators() {
 
 	return (
 		<SectionSatisfactionIndicators>
-			<ScrollAnimation animateIn="fadeIn" animateOnce delay={200}>
+			<Fade triggerOnce delay={200}>
 				<WrapperStatistics>
 					<NumberAnimated number={2} description={language.aboutMePage.stats.stat_1} />
 					<NumberAnimated number={15} description={language.aboutMePage.stats.stat_2} />
 					<NumberAnimated number={10} description={language.aboutMePage.stats.stat_4} />
 				</WrapperStatistics>
-			</ScrollAnimation>
+			</Fade>
 		</SectionSatisfactionIndicators>
 	);
 }

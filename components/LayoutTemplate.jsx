@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 //Third part librarys
 import Link from "next/link";
 import styled from "styled-components";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 //Custom components
 import SwitchThemeButton from "@/components/SwitchThemeButton";
@@ -161,7 +161,7 @@ export default function LayoutTemplate({ children }) {
 	return (
 		<>
 			<HeaderContainer>
-				<Fade top delay={100} duration={200}>
+                <Fade delay={100} duration={200} triggerOnce>
 					<Link href="#section-home" passHref>
 						<LogoContainer>
 							<LogoText>
@@ -173,7 +173,7 @@ export default function LayoutTemplate({ children }) {
 
 				<NavbarOptionContainer>
 					<div className="links">
-						<Fade top delay={100} duration={200}>
+                        <Fade delay={100} duration={200} triggerOnce>
 							<Link href="#section-home" passHref>
 								<NavbarOption>{language.navbarMenu.labelHome}</NavbarOption>
 							</Link>
@@ -181,28 +181,28 @@ export default function LayoutTemplate({ children }) {
 
 
 
-                        <Fade top delay={200} duration={200}>
+                        <Fade delay={200} duration={200} triggerOnce>
                             <Link href="#section-about" passHref>
                                 <NavbarOption>{language.navbarMenu.labelAboutMe}</NavbarOption>
                             </Link>
                         </Fade>
-						<Fade top delay={300} duration={200}>
+                        <Fade delay={300} duration={200} triggerOnce>
 					<Link href="#section-portifolio" passHref>
 						<NavbarOption>{language.navbarMenu.labelPortifolio}</NavbarOption>
 					</Link>
 				</Fade>
-                <Fade top delay={400} duration={200}>
+                <Fade delay={400} duration={200} triggerOnce>
                     <Link href="#section-experience" passHref>
                         <NavbarOption>{language.navbarMenu.labelExperience}</NavbarOption>
                     </Link>
                 </Fade>
-				<Fade top delay={500} duration={200}>
+                <Fade delay={500} duration={200} triggerOnce>
 					<Link href="#testimonials" passHref>
 						<NavbarOption>{language.navbarMenu.labelTestimonials}</NavbarOption>
 					</Link>
 				</Fade>
 				</div>
-				<Fade top delay={500} duration={200}>
+                <Fade delay={500} duration={200} triggerOnce>
 					{/* <SwitchThemeButton /> */}
 				</Fade>
 			</NavbarOptionContainer>

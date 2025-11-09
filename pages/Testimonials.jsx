@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-import Marquee from "react-fast-marquee";
-import { useTheme } from "styled-components";
+import dynamic from "next/dynamic";
+// react-fast-marquee relies on browser APIs; load client-side only
+const Marquee = dynamic(() => import("react-fast-marquee"), { ssr: false });
 
 //Contexto
 import { SettingsContext } from "@/context/SettingsContext";
@@ -61,6 +62,9 @@ const Testimonial = styled.div`
     background-color: ${(props) => props.theme.colors.backgroundSecondary};
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     transition: transform 240ms ease, box-shadow 240ms ease;
+    /* Hint GPU compositing to reduce subpixel flicker during marquee movement */
+    will-change: transform;
+    transform: translateZ(0);
 
 	&:hover {
 		transform: translateY(-4px);
@@ -202,13 +206,13 @@ const testimonials = [
 
 export default function Testimonials() {
     const { language } = useContext(SettingsContext);
-    const theme = useTheme();
 
     return (
         <Section id="testimonials">
             <TitleSection title={language.testimonialPage.title} subtitle={language.testimonialPage.subtitle} hasMarginBottom />
 
-            <Marquee autoFill gradient loop={0} direction="left" speed={50} gradientColor={theme.colors.backgroundPageRgb}>
+            {/* Reduce flicker by disabling gradient mask and lowering speed */}
+            <Marquee autoFill gradient={false} pauseOnHover direction="left" speed={30}>
                 {testimonials.map((t, index) => (
                     <Testimonial key={index}>
                         <QuotesLeft className="quote-icon" />

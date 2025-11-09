@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 import React, { useContext, useState } from "react";
 import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
+import { Fade } from "react-awesome-reveal";
 
 //Contexto
 import { SettingsContext } from "@/context/SettingsContext";
@@ -122,9 +122,9 @@ const Accordion = () => {
 	return (
 		<AccordionContainer>
 			{language.faq.questions.map((item, index) => (
-				<ScrollAnimation animateIn="fadeIn" animateOnce key={item.id}>
+				<Fade triggerOnce key={item.id}>
 					<AccordionItem key={index} question={`${item.question}`} answer={item.answer} isOpen={openIndex === index} onClick={() => toggleAccordion(index)} />
-				</ScrollAnimation>
+				</Fade>
 			))}
 		</AccordionContainer>
 	);

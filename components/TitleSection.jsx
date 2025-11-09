@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
+import { Fade } from "react-awesome-reveal";
 
 import { BodyText } from "@/styles/ui";
 
@@ -31,12 +31,12 @@ const Wrapper = styled.div`
 `;
 
 const TitleSection = ({ title, subtitle, hasMarginBottom, alignTitle }) => (
-	<ScrollAnimation animateIn="fadeIn" animateOnce delay={200}>
+	<Fade triggerOnce delay={200}>
 		<Wrapper hasMarginBottom={hasMarginBottom} alignTitle={alignTitle}>
 			<h2 className="type-string">{title}</h2>
 			{subtitle && <BodyText centerText>{subtitle}</BodyText>}
 		</Wrapper>
-	</ScrollAnimation>
+	</Fade>
 );
 
 export default TitleSection;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
+import { Fade } from "react-awesome-reveal";
 
 import { BodyText, FluidContainer } from "@/styles/ui";
 
@@ -46,7 +46,7 @@ const EmailLink = styled.a`
 export default function WorkTogetherCTA() {
   return (
     <FluidContainer>
-      <ScrollAnimation animateIn="fadeIn" animateOnce>
+      <Fade triggerOnce>
         <Section id="section-work-together">
           <CtaTitle>LET'S WORK TOGETHER!</CtaTitle>
           <CtaSubtitle centerText>
@@ -56,7 +56,7 @@ export default function WorkTogetherCTA() {
           <BodyText centerText>Say hello:</BodyText>
           <EmailLink href="mailto:muzammiljavedd@gmail.com">muzammiljavedd@gmail.com</EmailLink>
         </Section>
-      </ScrollAnimation>
+      </Fade>
     </FluidContainer>
   );
 }

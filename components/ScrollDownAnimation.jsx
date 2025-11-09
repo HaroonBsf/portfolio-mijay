@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useTheme } from "styled-components";
 import dynamic from "next/dynamic";
-
-const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
+// Use lottie-react (actively maintained and compatible with modern React)
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 //Animations
 import ScrollDownLottie from "@/public/lotties/scroll-down.json";
@@ -23,22 +23,12 @@ const ContainerLottie = styled.div`
 `;
 
 export default function ScrollDownAnimation() {
-	const theme = useTheme();
-	const [isStopped] = useState(false);
-	const [isPaused] = useState(false);
+    const theme = useTheme();
+    const animationData = theme.name === "dark" ? ScrollDownLottie : ScrollDownLottieLight;
 
-	var defaultOptions = {
-		loop: true,
-		autoplay: true,
-		animationData: theme.name == "dark" ? ScrollDownLottie : ScrollDownLottieLight,
-		rendererSettings: {
-			preserveAspectRatio: "xMidYMid slice",
-		},
-	};
-
-	return (
-		<ContainerLottie>
-			<Lottie options={defaultOptions} height={"100%"} width={"100%"} isStopped={isStopped} isPaused={isPaused} isClickToPauseDisabled={true} />
-		</ContainerLottie>
-	);
+    return (
+        <ContainerLottie>
+            <Lottie animationData={animationData} loop autoplay style={{ width: "100%", height: "100%" }} />
+        </ContainerLottie>
+    );
 }

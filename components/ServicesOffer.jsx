@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
+import { Fade } from "react-awesome-reveal";
 
 //Styled icons
 import { Robot } from "@styled-icons/fa-solid/Robot";
@@ -118,18 +118,18 @@ export default function ServicesOffer() {
 				<TitleSection title={language.servicesOffer.title} subtitle={language.servicesOffer.subtitle} hasMarginBottom />
 
 				<ContainerGrid>
-					<ScrollAnimation animateIn="fadeIn" animateOnce delay={100}>
-						<CardService>
+				<Fade triggerOnce delay={100}>
+					<CardService>
 							<div className="box">
 								<CodeBlock />
 							</div>
 							<h3>{language.servicesOffer.cards.development.title}</h3>
 							<p>{language.servicesOffer.cards.development.contentText}</p>
 						</CardService>
-					</ScrollAnimation>
+				</Fade>
 
-					<ScrollAnimation animateIn="fadeIn" animateOnce delay={200}>
-						<CardService>
+				<Fade triggerOnce delay={200}>
+					<CardService>
 							<div className="box">
 								<Robot />
 							</div>
@@ -137,10 +137,10 @@ export default function ServicesOffer() {
 							<h3>{language.servicesOffer.cards.seo.title}</h3>
 							<p>{language.servicesOffer.cards.seo.contentText}</p>
 						</CardService>
-					</ScrollAnimation>
+				</Fade>
 
-					<ScrollAnimation animateIn="fadeIn" animateOnce delay={300}>
-						<CardService>
+				<Fade triggerOnce delay={300}>
+					<CardService>
 							<div className="box">
 								<DesignIdeas />
 							</div>
@@ -148,10 +148,10 @@ export default function ServicesOffer() {
 							<h3>{language.servicesOffer.cards.ux.title}</h3>
 							<p>{language.servicesOffer.cards.ux.contentText}</p>
 						</CardService>
-					</ScrollAnimation>
+				</Fade>
 
-					<ScrollAnimation animateIn="fadeIn" animateOnce delay={400}>
-						<CardService>
+				<Fade triggerOnce delay={400}>
+					<CardService>
 							<div className="box">
 								<DesignServices />
 							</div>
@@ -159,10 +159,10 @@ export default function ServicesOffer() {
 							<h3>{language.servicesOffer.cards.branding.title}</h3>
 							<p>{language.servicesOffer.cards.branding.contentText}</p>
 						</CardService>
-					</ScrollAnimation>
+				</Fade>
 
-					<ScrollAnimation animateIn="fadeIn" animateOnce delay={500}>
-						<CardService>
+				<Fade triggerOnce delay={500}>
+					<CardService>
 							<div className="box">
 								<DesignServices />
 							</div>
@@ -170,37 +170,37 @@ export default function ServicesOffer() {
 							<h3>{language.servicesOffer.cards.consultancy.title}</h3>
 							<p>{language.servicesOffer.cards.consultancy.contentText}</p>
 						</CardService>
-					</ScrollAnimation>
+				</Fade>
 
-					<ScrollAnimation animateIn="fadeIn" animateOnce delay={600}>
-						<CardService>
+				<Fade triggerOnce delay={600}>
+					<CardService>
 							<div className="box">
 								<CodeBlock />
 							</div>
 							<h3>{language.servicesOffer.cards.mobile_devlopment.title}</h3>
 							<p>{language.servicesOffer.cards.mobile_devlopment.contentText}</p>
 						</CardService>
-					</ScrollAnimation>
+				</Fade>
 
-					<ScrollAnimation animateIn="fadeIn" animateOnce delay={700}>
-						<CardService>
+				<Fade triggerOnce delay={700}>
+					<CardService>
 							<div className="box">
 								<CodeBlock />
 							</div>
 							<h3>{language.servicesOffer.cards.chatbot.title}</h3>
 							<p>{language.servicesOffer.cards.chatbot.contentText}</p>
 						</CardService>
-					</ScrollAnimation>
+				</Fade>
 
-					<ScrollAnimation animateIn="fadeIn" animateOnce delay={800}>
-						<CardService>
+				<Fade triggerOnce delay={800}>
+					<CardService>
 							<div className="box">
 								<CodeBlock />
 							</div>
 							<h3>{language.servicesOffer.cards.support.title}</h3>
 							<p>{language.servicesOffer.cards.support.contentText}</p>
 						</CardService>
-					</ScrollAnimation>
+				</Fade>
 				</ContainerGrid>
 			</SectionServices>
 		</FluidContainer>

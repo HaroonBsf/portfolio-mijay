@@ -5,7 +5,7 @@ import { SettingsContext } from "@/context/SettingsContext";
 
 //Third's librarys
 import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
+import { Fade } from "react-awesome-reveal";
 
 //Custom components
 import SocialNetworkRowStack from "@/components/SocialNetworkRowStack";
@@ -217,7 +217,7 @@ export default function SobreMim(props) {
             <WrapperAboutMe>
                 <div className="container">
                     <div className="right-view">
-                        <ScrollAnimation animateIn="fadeIn" animateOnce delay={200} initiallyVisible>
+                        <Fade triggerOnce delay={200}>
                         <AboutHeader>
                             <AboutLabel>The Developer Behind the Keyboard</AboutLabel>
                             <AboutTitle>ABOUT ME</AboutTitle>
@@ -235,7 +235,7 @@ export default function SobreMim(props) {
                         <BottomActions>
                             <SocialNetworkRowStack />
                         </BottomActions>
-                        </ScrollAnimation>
+                        </Fade>
                     </div>
                 </div>
             </WrapperAboutMe>
