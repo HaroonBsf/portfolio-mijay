@@ -1,10 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // Use a separate dist directory in dev to avoid Windows file lock
-    // issues with .next/trace when multiple processes are present.
-    // This prevents EPERM errors seen when another Next process holds
-    // a handle to the default .next folder.
-    distDir: ".next-dev",
     compiler: {
 		styledComponents: true,
 	},
