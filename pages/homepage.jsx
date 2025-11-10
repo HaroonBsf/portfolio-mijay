@@ -153,25 +153,25 @@ const DeveloperName = styled.span`
 `;
 
 const HelloImage = styled.img`
-    width: 40px;
-    height: 35px;
+    width: 56px;
+    height: 50px;
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 10px;
     vertical-align: middle;
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 
     /* Scale hello image with viewport */
     @media (min-width: 1600px) {
-        width: 46px;
-        height: 40px;
+        width: 64px;
+        height: 58px;
     }
     @media (max-width: 900px) {
-        width: 36px;
-        height: 32px;
+        width: 48px;
+        height: 44px;
     }
     @media (max-width: 601px) {
-        width: 32px;
-        height: 28px;
+        width: 42px;
+        height: 38px;
     }
 `;
 
