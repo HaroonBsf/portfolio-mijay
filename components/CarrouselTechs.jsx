@@ -60,7 +60,7 @@ const Carrousel = styled.div`
 	.slide svg {
 		width: 78px;
 		height: 78px;
-		color: ${(props) => (props.colorIcon == "brand" ? props.theme.colors.branding : props.theme.colors.backgroundSecondary)};
+		color: ${(props) => (props.colorIcon == "brand" ? props.theme.colors.branding : props.theme.colors.subtitle)};
 		transition: all 0.3s ease;
 	}
 
