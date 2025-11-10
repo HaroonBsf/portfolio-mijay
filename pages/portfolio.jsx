@@ -134,6 +134,36 @@ const HeaderTitle = styled.h1`
     }
 `;
 
+// Footer CTA link for more projects on GitHub
+const ProjectsFooterCTA = styled.a`
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border: 2px solid ${(props) => props.theme.colors.branding};
+    border-radius: 10px;
+    color: ${(props) => props.theme.colors.branding};
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: ${(props) => props.theme.colors.branding};
+        color: ${(props) => props.theme.colors.backgroundPage};
+        transform: translateY(-1px);
+    }
+
+    @media (max-width: 900px) {
+        margin-top: 16px;
+        padding: 10px 14px;
+        border-radius: 8px;
+        font-weight: 600;
+    }
+`;
+
 // Modal removed as part of the redesign
 
 export default function Portifolio() {
@@ -693,6 +723,16 @@ export default function Portifolio() {
                     </Fade>
                 ))}
             </ContainerGrid>
+
+            <ProjectsFooterCTA
+                href="https://github.com/MUZAMMIL-JAVED"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit GitHub to check more projects"
+                title="Visit GitHub for more projects"
+            >
+                Visit GitHub to check more projects
+            </ProjectsFooterCTA>
         </SectionPortifolio>
     );
 }

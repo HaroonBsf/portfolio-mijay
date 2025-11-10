@@ -74,6 +74,29 @@ export default function TimelinePortifolio(props) {
 
 	return (
 		<VerticalTimeline lineColor={theme.colors.branding}>
+			{/* Present - AI & Automation (Freelance) */}
+			<VerticalTimelineElement
+				className="vertical-timeline-element--work"
+				contentStyle={{ borderBottom: `4px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
+				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
+				icon={<WorkIcon />}
+				contentArrowStyle={{ borderRight: `7px solid ${theme.colors.backgroundSecondary}` }}>
+				<TimelineContent>
+					<h3 style={{ color: theme.colors.branding, padding: "2px 8px", borderRadius: "4px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>Present</h3>
+					<BoldText>
+						{language.experiencePage.timeline.labelCompany}: <span>Bit n Byte Digital Solutions</span>
+					</BoldText>
+					<BoldText>
+						{language.experiencePage.timeline.labelPosition}: <span>AI & Automation Engineer</span>
+					</BoldText>
+					<BoldText>
+						{language.experiencePage.timeline.labelCategory}: <span>Generative AI & Workflow Automation</span>
+					</BoldText>
+					<BoldText>
+						{language.experiencePage.timeline.labelTitle}: <span>LLM-Driven Business Process Automation</span>
+					</BoldText>
+				</TimelineContent>
+			</VerticalTimelineElement>
 			{/* 2025 - Personal Project (Object Detection & Recognition) */}
 			<VerticalTimelineElement
 				className="vertical-timeline-element--work"
