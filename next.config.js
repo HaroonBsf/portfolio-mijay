@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: "standalone",
   images: {
-    // Use Akamai loader to emit direct public paths on Netlify
     loader: "akamai",
     path: "/",
+    unoptimized: true,
     domains: [],
   },
-  output: "standalone",
 };
 
 module.exports = nextConfig;
