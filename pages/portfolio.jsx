@@ -164,7 +164,7 @@ export default function Portifolio() {
 				title: language.portifolioPage.projects.id_23.title,
 				description: language.portifolioPage.projects.id_23.description,
 				liveDemoUrl: "https://www.prodosdigital.com.br/",
-				imageSourcePath: "/img/portfolio-projects/prodos-digital.png",
+            imageSourcePath: "/images/portfolio-projects/prodos-digital.png",
 				techs: [
 					<Tooltip toolTipText="React.JS">
 						<ReactLogo />
@@ -206,7 +206,7 @@ export default function Portifolio() {
 				title: language.portifolioPage.projects.id_2.title,
 				description: language.portifolioPage.projects.id_2.description,
 				liveDemoUrl: null,
-				imageSourcePath: "/img/portfolio-projects/devradar.png",
+            imageSourcePath: "/images/portfolio-projects/devradar.png",
 				techs: [
 					<Tooltip toolTipText="ReactJS">
 						<ReactLogo />
@@ -236,7 +236,7 @@ export default function Portifolio() {
 				title: language.portifolioPage.projects.id_3.title,
 				description: language.portifolioPage.projects.id_3.description,
 				liveDemoUrl: null,
-				imageSourcePath: "/img/portfolio-projects/be-the-hero.png",
+            imageSourcePath: "/images/portfolio-projects/be-the-hero.png",
 				techs: [
 					<Tooltip toolTipText="ReactJS">
 						<ReactLogo />
@@ -290,7 +290,7 @@ export default function Portifolio() {
 				title: language.portifolioPage.projects.id_5.title,
 				description: language.portifolioPage.projects.id_5.description,
 				liveDemoUrl: null,
-				imageSourcePath: "/img/portfolio-projects/letmeask.png",
+            imageSourcePath: "/images/portfolio-projects/letmeask.png",
 				techs: [
 					<Tooltip toolTipText="ReactJs">
 						<ReactLogo />
@@ -317,7 +317,7 @@ export default function Portifolio() {
 				title: language.portifolioPage.projects.id_6.title,
 				description: language.portifolioPage.projects.id_6.description,
 				liveDemoUrl: null,
-				imageSourcePath: "/img/portfolio-projects/plantmanager.png",
+            imageSourcePath: "/images/portfolio-projects/plantmanager.png",
 				techs: [
 					<Tooltip toolTipText="ReactJS">
 						<ReactLogo />
@@ -422,7 +422,7 @@ export default function Portifolio() {
 				title: language.portifolioPage.projects.id_11.title,
 				description: language.portifolioPage.projects.id_11.description,
 				liveDemoUrl: "https://glaysonvisgueira.vercel.app/",
-				imageSourcePath: "/img/portfolio-projects/portfolio-page.png",
+            imageSourcePath: "/images/portfolio-projects/portfolio-page.png",
 				techs: [
 					<Tooltip toolTipText="ReactJS">
 						<ReactLogo />
@@ -503,7 +503,7 @@ export default function Portifolio() {
 				title: language.portifolioPage.projects.id_15.title,
 				description: language.portifolioPage.projects.id_15.description,
 				liveDemoUrl: "https://calculadora-svelte-liart.vercel.app/",
-				imageSourcePath: "/img/portfolio-projects/svelt-calculadora.png",
+            imageSourcePath: "/images/portfolio-projects/svelt-calculadora.png",
 				techs: [
 					<Tooltip toolTipText="Svelte">
 						<Svelte />
@@ -524,7 +524,7 @@ export default function Portifolio() {
 				title: language.portifolioPage.projects.id_16.title,
 				description: language.portifolioPage.projects.id_16.description,
 				liveDemoUrl: "https://layout-mui-boilerplate.vercel.app/dashboards",
-				imageSourcePath: "/img/portfolio-projects/mui-v5-layout-dashboard.png",
+            imageSourcePath: "/images/portfolio-projects/mui-v5-layout-dashboard.png",
 				techs: [
 					<Tooltip toolTipText="React.JS">
 						<ReactLogo />
@@ -593,7 +593,7 @@ export default function Portifolio() {
 				title: language.portifolioPage.projects.id_20.title,
 				description: language.portifolioPage.projects.id_20.description,
 				liveDemoUrl: "https://material-ui-v6-dashboards-test.vercel.app/",
-				imageSourcePath: "/img/portfolio-projects/mui-v6-layout-dashboard.png",
+            imageSourcePath: "/images/portfolio-projects/mui-v6-layout-dashboard.png",
 				techs: [
 					<Tooltip toolTipText="React">
 						<ReactLogo />
@@ -611,7 +611,7 @@ export default function Portifolio() {
 				title: language.portifolioPage.projects.id_21.title,
 				description: language.portifolioPage.projects.id_21.description,
 				liveDemoUrl: "https://state-management-jotai-vs-zustand.vercel.app",
-				imageSourcePath: "/img/portfolio-projects/state-management.png",
+            imageSourcePath: "/images/portfolio-projects/state-management.png",
 				techs: [
 					<Tooltip toolTipText="React">
 						<ReactLogo />
@@ -630,7 +630,7 @@ export default function Portifolio() {
 				title: language.portifolioPage.projects.id_22.title,
 				description: language.portifolioPage.projects.id_22.description,
 				liveDemoUrl: "https://www.cedulapromotora.com.br",
-				imageSourcePath: "/img/portfolio-projects/landing-cedula-promotora.png",
+                imageSourcePath: "/images/portfolio-projects/landing-cedula-promotora.png",
 				techs: [
 					<Tooltip toolTipText="React">
 						<ReactLogo />
@@ -649,18 +649,18 @@ export default function Portifolio() {
 
     // Ordered list to match attached portfolio images and titles
     const orderedProjects = [
-        { id: 1, title: "Finance", category: "Web development", linkUrl: null, description: "A modern dashboard for tracking expenses, revenue and budgets with clean charts and card summaries.", imageSourcePath: "/img/portfolio-projects/project-1.jpg", techs: [] },
-        { id: 2, title: "Orizon", category: "Web development", linkUrl: null, description: "Analytics overview that highlights portfolio KPIs, conversions and growth trends in a crisp, bright UI.", imageSourcePath: "/img/portfolio-projects/project-2.png", techs: [] },
-        { id: 3, title: "Weather App", category: "Mobile application", linkUrl: null, description: "Multi-panel weather interface with hourly and weekly forecasts, designed for fast, glanceable insights.", imageSourcePath: "/img/portfolio-projects/project-3.png", techs: [] },
-        { id: 4, title: "MOVIES APP", category: "Mobile application", linkUrl: null, description: "Movie discovery experience featuring rich posters, grid browsing and clean detail pages for titles you love.", imageSourcePath: "/img/portfolio-projects/project-4.png", techs: [] },
-        { id: 5, title: "AR E-Commerce", category: "Mobile application", linkUrl: null, description: "Concept screens for an AR-powered shopping flow—preview products, compare and move smoothly to checkout.", imageSourcePath: "/img/portfolio-projects/project-5.jpg", techs: [] },
-        { id: 6, title: "Open Reads", category: "Mobile application", linkUrl: null, description: "Book browsing layouts with large visuals and long-form descriptions, crafted for a calm reading feel.", imageSourcePath: "/img/portfolio-projects/project-6.jpg", techs: [] },
-        { id: 7, title: "Open Reads", category: "Mobile application", linkUrl: null, description: "An alternate Open Reads set showcasing product pages and mobile listing views in a lightweight design.", imageSourcePath: "/img/portfolio-projects/project-7.jpg", techs: [] },
-        { id: 8, title: "Meditation", category: "Mobile application", linkUrl: null, description: "Mindfulness app screens including sessions, streak tracking and guided prompts to help you focus.", imageSourcePath: "/img/portfolio-projects/project-8.jpg", techs: [] },
-        { id: 9, title: "Music App", category: "Mobile application", linkUrl: null, description: "Streamlined music UI with playlists, album views and player controls optimized for mobile.", imageSourcePath: "/img/portfolio-projects/project-9.jpg", techs: [] },
-        { id: 10, title: "StoryPad", category: "Mobile application", linkUrl: null, description: "Note-taking layouts with tags, archives and a distraction-free reading mode for longer notes.", imageSourcePath: "/img/portfolio-projects/project-10.jpg", techs: [] },
-        { id: 11, title: "Shopping App", category: "Mobile application", linkUrl: null, description: "E‑commerce app kit including home feed, product detail, cart and checkout screens.", imageSourcePath: "/img/portfolio-projects/project-11.jpg", techs: [] },
-        { id: 12, title: "Book Search", category: "Mobile application", linkUrl: null, description: "Search-first browsing for books, categories and author pages with concise summaries.", imageSourcePath: "/img/portfolio-projects/project-12.jpg", techs: [] },
+        { id: 1, title: "Finance", category: "Web development", linkUrl: null, description: "A modern dashboard for tracking expenses, revenue and budgets with clean charts and card summaries.", imageSourcePath: "/images/portfolio-projects/project-1.jpg", techs: [] },
+        { id: 2, title: "Orizon", category: "Web development", linkUrl: null, description: "Analytics overview that highlights portfolio KPIs, conversions and growth trends in a crisp, bright UI.", imageSourcePath: "/images/portfolio-projects/project-2.png", techs: [] },
+        { id: 3, title: "Weather App", category: "Mobile application", linkUrl: null, description: "Multi-panel weather interface with hourly and weekly forecasts, designed for fast, glanceable insights.", imageSourcePath: "/images/portfolio-projects/project-3.png", techs: [] },
+        { id: 4, title: "MOVIES APP", category: "Mobile application", linkUrl: null, description: "Movie discovery experience featuring rich posters, grid browsing and clean detail pages for titles you love.", imageSourcePath: "/images/portfolio-projects/project-4.png", techs: [] },
+        { id: 5, title: "AR E-Commerce", category: "Mobile application", linkUrl: null, description: "Concept screens for an AR-powered shopping flow—preview products, compare and move smoothly to checkout.", imageSourcePath: "/images/portfolio-projects/project-5.jpg", techs: [] },
+        { id: 6, title: "Open Reads", category: "Mobile application", linkUrl: null, description: "Book browsing layouts with large visuals and long-form descriptions, crafted for a calm reading feel.", imageSourcePath: "/images/portfolio-projects/project-6.jpg", techs: [] },
+        { id: 7, title: "Open Reads", category: "Mobile application", linkUrl: null, description: "An alternate Open Reads set showcasing product pages and mobile listing views in a lightweight design.", imageSourcePath: "/images/portfolio-projects/project-7.jpg", techs: [] },
+        { id: 8, title: "Meditation", category: "Mobile application", linkUrl: null, description: "Mindfulness app screens including sessions, streak tracking and guided prompts to help you focus.", imageSourcePath: "/images/portfolio-projects/project-8.jpg", techs: [] },
+        { id: 9, title: "Music App", category: "Mobile application", linkUrl: null, description: "Streamlined music UI with playlists, album views and player controls optimized for mobile.", imageSourcePath: "/images/portfolio-projects/project-9.jpg", techs: [] },
+        { id: 10, title: "StoryPad", category: "Mobile application", linkUrl: null, description: "Note-taking layouts with tags, archives and a distraction-free reading mode for longer notes.", imageSourcePath: "/images/portfolio-projects/project-10.jpg", techs: [] },
+        { id: 11, title: "Shopping App", category: "Mobile application", linkUrl: null, description: "E‑commerce app kit including home feed, product detail, cart and checkout screens.", imageSourcePath: "/images/portfolio-projects/project-11.jpg", techs: [] },
+        { id: 12, title: "Book Search", category: "Mobile application", linkUrl: null, description: "Search-first browsing for books, categories and author pages with concise summaries.", imageSourcePath: "/images/portfolio-projects/project-12.jpg", techs: [] },
         { id: 13, title: "Translator", category: "Mobile application", linkUrl: "https://github.com/MUZAMMIL-JAVED/R-Translator", description: "Lightweight translator UI with conversational preview and quick language switching.", imageSourcePath: "/img/portfolio-projects/project-13.jpg", techs: [] },
         { id: 14, title: "Event Mangement", category: "Mobile application", linkUrl: null, description: "Event admin views to create, approve and manage registrations with clear status panels.", imageSourcePath: "/img/portfolio-projects/project-14.jpg", techs: [] },
         { id: 15, title: "Attendance Mangement System", category: "Mobile application", linkUrl: "https://github.com/MUZAMMIL-JAVED/Attendance_System", description: "Attendance tracking forms and logs with dashboards for daily status and summaries.", imageSourcePath: "/img/portfolio-projects/project-15.jpg", techs: [] },

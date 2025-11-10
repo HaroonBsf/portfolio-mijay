@@ -278,7 +278,7 @@ export default function HomePage() {
                         {/* Bold the developer name for pixel-perfect match */}
                         {/* Using a separate styled span ensures only the name is bold */}
                         <IntroText>
-                            <HelloImage src="/img/hello.png" alt="Hello" /> Hey, I'm <DeveloperName>{language.landingPage.firstTypeText}</DeveloperName>
+                            <HelloImage src="/images/hello.png" alt="Hello" /> Hey, I'm <DeveloperName>{language.landingPage.firstTypeText}</DeveloperName>
                         </IntroText>
                         <HeroTitle>
                             FULL STACK <span className="brand">DEVELOPER</span>
