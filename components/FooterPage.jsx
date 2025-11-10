@@ -286,12 +286,14 @@ export default function FooterPage(props) {
 		setVersion("1.0.0");
 	}, []);
 
-	const goToTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: "smooth",
-		});
-	};
+    const goToTop = () => {
+        if (typeof window !== "undefined") {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        }
+    };
 
 	return (
 		<FooterContainer>
