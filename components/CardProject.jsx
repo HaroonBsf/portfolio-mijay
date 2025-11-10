@@ -10,7 +10,7 @@ import { NoPhotography } from "@styled-icons/material-outlined";
 
 const Card = styled.div`
     display: flex;
-    align-items: flex-start; /* avoid stretching children to equal heights */
+    align-items: stretch; /* make columns equal heights */
     justify-content: space-between;
     flex-direction: row;
     width: 100%;
@@ -30,8 +30,8 @@ const Card = styled.div`
     .image {
         position: relative;
         width: 50%;
-        /* Fixed visual size using aspect ratio and center-crop */
-        aspect-ratio: 16 / 9;
+        min-height: 320px;
+        height: 100%; /* fill full card height */
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -120,7 +120,8 @@ const Card = styled.div`
         }
 
         .image {
-            aspect-ratio: 16 / 9; /* keep same visual size on mobile */
+            min-height: 240px; /* consistent fixed image height on mobile */
+            height: auto;
         }
     }
 `;
