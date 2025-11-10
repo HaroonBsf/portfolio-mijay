@@ -1,6 +1,6 @@
 import React, { useContext, useCallback } from "react";
 import styled from "styled-components";
-import Image from "next/image";
+// Use native <img> for rock-solid static delivery on Netlify
 
 //Context
 import { SettingsContext } from "@/context/SettingsContext";
@@ -39,7 +39,10 @@ const Card = styled.div`
         justify-content: center;
 
         img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
+            display: block;
         }
 
         svg {
@@ -151,7 +154,9 @@ export default function CardProject({ title, description, techs, imageSourcePath
         <Card clickable={clickable}>
             <div className="image">
                 {imageSourcePath ? (
-                    <Image src={imageSourcePath} alt={`Project image: ${title}`} layout="fill" objectFit="cover" priority />
+                    // Native image tag avoids Netlify's next/image optimizer and uses direct public paths
+                    // Container provides sizing; CSS applies object-fit: cover
+                    <img src={imageSourcePath} alt={`Project image: ${title}`} loading="lazy" />
                 ) : (
                     <NoPhotography />
                 )}

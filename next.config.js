@@ -2,7 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    unoptimized: true,
+    // Use Akamai loader to emit direct public paths on Netlify
+    loader: "akamai",
+    path: "/",
     domains: [],
   },
   output: "standalone",
