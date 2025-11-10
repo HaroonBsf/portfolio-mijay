@@ -40,7 +40,6 @@ import { Typescript } from "@styled-icons/simple-icons/Typescript";
 import { Sass } from "@styled-icons/fa-brands/Sass";
 import { Jquery } from "@styled-icons/boxicons-logos/Jquery";
 import { Figma } from "@styled-icons/boxicons-logos/Figma";
-import { Adobephotoshop } from "@styled-icons/simple-icons/Adobephotoshop";
 import { Visualstudiocode } from "@styled-icons/simple-icons/Visualstudiocode";
 import { Trello } from "@styled-icons/boxicons-logos/Trello";
 
@@ -60,7 +59,8 @@ const Carrousel = styled.div`
 	.slide svg {
 		width: 78px;
 		height: 78px;
-		color: ${(props) => (props.colorIcon == "brand" ? props.theme.colors.branding : props.theme.colors.subtitle)};
+		color: ${(props) => (props.colorIcon == "brand" ? props.theme.colors.branding : props.theme.colors.inactiveTitle)};
+		opacity: 0.9;
 		transition: all 0.3s ease;
 	}
 
@@ -91,9 +91,6 @@ export default function CarrouselTechs(props) {
 	return (
 		<Marquee autoFill gradient loop={0} gradientColor={theme.colors.backgroundPageRgb} direction={direction} speed={speed}>
 			<Carrousel colorIcon={colorIcon}>
-				<div className="slide">
-					<Adobephotoshop />
-				</div>
 				<div className="slide">
 					<Amazons3 />
 				</div>
