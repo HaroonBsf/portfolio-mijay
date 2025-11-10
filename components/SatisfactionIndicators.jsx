@@ -85,8 +85,8 @@ export default function SatisfactionIndicators() {
 		<SectionSatisfactionIndicators>
 			<Fade triggerOnce delay={200}>
 				<WrapperStatistics>
-					<NumberAnimated number={2} description={language.aboutMePage.stats.stat_1} />
-					<NumberAnimated number={15} description={language.aboutMePage.stats.stat_2} />
+					<NumberAnimated number={3} description={language.aboutMePage.stats.stat_1} />
+					<NumberAnimated number={25} description={language.aboutMePage.stats.stat_2} />
 					<NumberAnimated number={10} description={language.aboutMePage.stats.stat_4} />
 				</WrapperStatistics>
 			</Fade>

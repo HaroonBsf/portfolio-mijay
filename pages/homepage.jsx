@@ -21,7 +21,7 @@ import { FluidContainer } from "@/styles/ui";
 import { SettingsContext } from "@/context/SettingsContext";
 
 // CV file public URL (avoid importing from public in SSR)
-const cvFile = "/pdf/muzammil_javed_cv.pdf";
+const cvFile = "/pdf/MJ.CV.pdf";
 
 const LandingPageContainer = styled.div`
 	display: flex;
@@ -257,7 +257,7 @@ export default function HomePage() {
 	const handleDownload = () => {
 		const link = document.createElement("a");
 		link.href = cvFile;
-		link.download = "muzammil_javed_cv.pdf";
+		link.download = "MJ.CV.pdf";
 		document.body.appendChild(link);
 		link.click();
 		document.body.removeChild(link);
@@ -285,7 +285,7 @@ export default function HomePage() {
                         </HeroTitle>
                         <SubTitleLanding>Crafting And Breaking The Internet Daily</SubTitleLanding>
                         <WrapperButtons>
-                            <VisitWorkButton href={cvFile} download="muzammil_javed_cv.pdf">DOWNLOAD CV</VisitWorkButton>
+                            <VisitWorkButton href={cvFile} download="MJ.CV.pdf">DOWNLOAD CV</VisitWorkButton>
                 </WrapperButtons>
                         {/* Trusted message removed */}
                     </TitleLandingContainer>
